@@ -36,5 +36,8 @@ while True:
         else:
             print("Žádné záznamy nebyly nalezeny.")
     # Ukončení aplikace
+    elif volba == '4':
+        print("Ukončení aplikace.")
+        sys.exit()
 
     # Neplatná volba
