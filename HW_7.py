@@ -41,3 +41,5 @@ while True:
         sys.exit()
 
     # Neplatná volba
+    else:
+        print("Neplatná volba, zkuste znovu.")
