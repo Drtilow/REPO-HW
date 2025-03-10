@@ -19,6 +19,12 @@ while True:
         print("Záznam byl přidán.")
 
     # Zobrazení existujících záznamů
+    elif volba == '2':
+        if zaznamy:
+            for zaznam in zaznamy:
+                print(f"Jméno: {zaznam[0]}, Třída: {zaznam[1]}")
+        else:
+            print("Žádné záznamy k zobrazení.")
 
     # Vyhledání záznamu podle klíčového slova
 
