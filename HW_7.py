@@ -27,7 +27,14 @@ while True:
             print("Žádné záznamy k zobrazení.")
 
     # Vyhledání záznamu podle klíčového slova
-
+    elif volba == '3':
+        klicove_slovo = input("Zadejte klíčové slovo k vyhledání: ")
+        nalezene_zaznamy = [zaznam for zaznam in zaznamy if klicove_slovo in zaznam[0] or klicove_slovo in zaznam[1]]
+        if nalezene_zaznamy:
+            for zaznam in nalezene_zaznamy:
+                print(f"Jméno: {zaznam[0]}, Třída: {zaznam[1]}")
+        else:
+            print("Žádné záznamy nebyly nalezeny.")
     # Ukončení aplikace
 
     # Neplatná volba
