@@ -10,8 +10,13 @@ while True:
     print("3. Vyhledat záznam podle klíčového slova")
     print("4. Ukončit aplikaci")
     volba = input("Vyberte možnost: ")
-    
+
     # Přidání nového záznamu
+    if volba == '1':
+        jmeno = input("Zadejte jméno studenta: ")
+        trida = input("Zadejte třídu studenta: ")
+        zaznamy.append((jmeno, trida))
+        print("Záznam byl přidán.")
 
     # Zobrazení existujících záznamů
 
